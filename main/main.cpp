@@ -69,16 +69,16 @@ extern "C" void app_main() {
             // printf("rawX: %u, rawY: %u\n", ts.get_raw_X(), ts.get_raw_Y());
             // printf("pixelX: %u, pixelY: %u\n", ts.get_X(), ts.get_Y());
 
-            if (ts.get_Y() >= 440)
-            {
-                // clear columns 0-439
-                cnv._drawingHistory.clear();
-            }
+            // if (ts.get_Y() >= 440)
+            // {
+            //     // clear columns 0-439
+            //     cnv._drawingHistory.clear();
+            // }
 
-            if (ts.get_Y() < 440)
-            {
-                cnv.drawPixel();
-            }
+            // if (ts.get_Y() < 440)
+            // {
+            //     cnv.drawPixel();
+            // }
         }
         vTaskDelay(pdMS_TO_TICKS(10));
     }

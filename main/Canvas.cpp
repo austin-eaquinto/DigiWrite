@@ -91,7 +91,7 @@ void Canvas::render()
         if (_sliceYStart < 440)
         {
             clearCanvas(0xFFFF);
-            for (const auto& point : _drawingHistory)
+                for (const auto& point : _drawingHistory)
             {
                 if (point.y >= _sliceYStart && point.y < (_sliceYStart + PORTRAIT_SLICE_HEIGHT))
                 {
@@ -103,6 +103,8 @@ void Canvas::render()
         }
         // the reset/clear button
         if (_sliceYStart >= 440) { clearCanvas(0x3333); }
+
+        if (_touchscreen->get_Y() < 440) { drawPixel(); }
         
         // drawLine(10, 10, 300, 400, 0x0000); // test line
         // args- x0,yStart,x1,yEnd
