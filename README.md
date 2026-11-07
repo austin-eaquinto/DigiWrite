@@ -16,10 +16,10 @@ freehand on the ST7796S display and have them interpreted and converted into dig
 **Not started yet:** letter recognition and text output.
 
 ### Roadmap
-- [ ] Wire up the display and touch controller on a shared SPI bus
-- [ ] `DisplayScreen` class: address window and bounded drawing
-- [ ] `TouchScreen` class: coordinate capture and data logging
-- [ ] Touch interrupt handler (T_IRQ)
+- [x] Wire up the display and touch controller on a shared SPI bus
+- [x] `DisplayScreen` class: address window and bounded drawing
+- [x] `TouchScreen` class: coordinate capture and data logging
+- [x] Touch interrupt handler (T_IRQ)
 - [ ] Stroke capture and normalization
 - [ ] Single-letter recognition
 - [ ] Convert recognized letters to on-screen text
